@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subsriber</title>
+</head>
+
+<style>
+
+    body{
+        background-color: lightsteelblue;
+    }
+    #container{
+        background-color: azure;
+        height: 800px;
+        width: 400px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        margin: 40px;
+    }
+    #containerHead{
+        display: flex;
+        justify-content: first baseline;
+        flex-direction: row;
+        padding-left: 20px;
+    }
+    #containerPara{
+        display: flex;
+        background-color: rgb(2, 158, 248);
+        height: 180px;
+        width: 340px;
+        margin-left: 20px;
+        margin-right: 30px;
+        border-radius: 10px;
+    }
+
+    #EmailBox{
+        margin: 20px;
+    }
+    
+    #UnsubscribeBox{
+        margin: 20px;
+    }
+
+    #boxPara{
+        color: azure;
+       
+    }
+
+    #buttonBox{
+        display: flex;
+        justify-content: end;
+        margin-top: 30px;
+        margin-right: 40px;
+        
+    }
+    #star{
+        color: red;
+    }
+    #EmailLabel{
+        font-weight: bold;
+    }
+    #UnsubscribeLabel{
+        font-weight: bold;
+    }
+
+    #emailInput{
+        width: 330px;
+        height: 25px;
+        border-style: solid;
+        border-radius: 5px;
+        background-color: rgb(228, 250, 250);
+    }
+
+    #UnsubscribeInput{
+        width: 330px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: rgb(228, 250, 250);
+    }
+
+    #unsubscribe{
+        height: 25px;
+        background-color: rgb(228, 250, 250);
+        border-radius: 5px;
+    }
+
+    #hrLine{
+        color: black;
+    }
+
+
+</style>
+<body>
+
+    <div id="container">
+        <div id="containerHead">
+            <h3 id="heading">Subscriber</h3>
+        </div>
+        <hr id="hrLine">
+        
+
+        <div id="containerPara">
+            <div id="boxPara">
+            <pre id="para">
+  We're sorry to see you go, but hey, no hard
+  feelings, hopefully we will see you back
+  one day.
+  Please fill in your email address in order to
+  unsubscribe from the list.
+  You will receive an email to confirm your 
+  unsubscription, just to make sure this is
+  not an accident or somebody else tries to 
+  unsubscribe you.
+            </pre>
+            </div>
+        </div>
+
+        <div id="EmailBox">
+
+            <form action="">
+                <label id="EmailLabel">Email <sup><span id="star">*</span></sup></label><br>
+                <div> <input id="emailInput" type="text"></div>
+            </form>
+        </div>
+
+        <div id="UnsubscribeBox">
+
+            <form action="">
+                <label id="UnsubscribeLabel">Unsubscribe reason</label><br>
+                <div> <input id="UnsubscribeInput" type="text" placeholder="Unsubscribe reason"></div>
+            </form>
+        </div>
+
+        <div id="buttonBox">
+            <form action="">
+                <div>
+                    <button id="unsubscribe" name="unsubscribe">Unsubscribe</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
